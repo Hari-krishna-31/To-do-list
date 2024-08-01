@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>To-Do  Galaxy</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="navbar">
+        <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">To-Do Galaxy  </h1>
+        <br><h1 style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif"> Plan Your  Day!</h1>
+
+
+    </div>
+
+    <!-- adding bg image -->
+  
+
+    
+
+    <div class="container">
+        <div class="book-container">
+            <h2>Today's Schedule</h2>
+                <p><ul>
+                    <li>  HR Meet </li>
+                    <li> Group Task</li>
+                    <li>  Airport</li>
+                       
+                    </ul>
+                </p>
+            <button onclick="deletebook(event)">Delete</button>
+        </div>
+    </div>
+
+    <div class="popup-overlay"></div>
+
+    <div class="popup-box">
+        <h2>Add Notes</h2>
+            <form>
+                <input type="text" placeholder="Add  Titles" id="title-input" > 
+                <textarea placeholder="Enter Notes" id="notes-input"></textarea>
+                <button id="add-note">ADD</button>
+                <button id="cancel=popup">CANCEL</button>          
+            </form>
+    </div>
+    <button class="add-button" id="add-popup">+</button>
+
+
+
+
+
+    <script src="script.js"></script>
+    
+</body>
+
+
+</html>
